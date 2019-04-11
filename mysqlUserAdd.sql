@@ -9,7 +9,12 @@ text varchar(255),
 file varchar(255)
 );
 
-insert into website (title, tag, text, file) values ("Project Overview", "overview", "Some text", "index.php");
+insert into website (title, tag, text, file) values ("Project Overview", "overview", "<h3>Overview</h3>
+<p>We are implementing Single Sign On.
+
+We have a working build with LDAP in the sense that an active directory user can log into nextcloud using their AD information.
+
+We have ADFS kinda working. We still have some errors to work through though.</p>", "index.php");
 
 insert into website (title, tag, text, file) values ("Screenshots", "sc", "<p>This is a list of all of our gathered screenshots.</p>", "screenshots.php");
 
@@ -18,7 +23,7 @@ insert into website (title, tag, text, file) values ("Team Members and Roles", "
 <li>Vince Chu
 <li>Dante Gennero
 <li>Mitchell Parker
-</ul>
+</ul>&nbsp;
 ", "team.php");
 
 insert into website (title, tag, text, file) values ("How to Access", "access", "Some more text", "access.php");
