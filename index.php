@@ -9,6 +9,9 @@
     <title>Sys Admin Project</title>
 </head>
 <body>
+
+<?php require_once("db.php") ?>
+
 <div class="jumbotron text-center" style="background-image: url('http://cs.montclair.edu/images/csimage8.jpg');">
     <h1 style="color:#ffd500">Team Name Project</h1>
     <p>RIP</p>
