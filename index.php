@@ -7,7 +7,7 @@
  */
 
 require "db.php";
-$sql = "select * from website where tag = 'Overview'";
+$sql = "select * from website where tag = 'overview'";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $text = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -28,7 +28,7 @@ echo print_r($text, true);
 
 <div class="jumbotron text-center" style="background-image: url('http://cs.montclair.edu/images/csimage8.jpg');">
     <h1 style="color:#ffd500">Team Name Project</h1>
-    <p style="color:#ffd500"><?php echo $text["title"]; ?></p>
+    <h3 style="color:#ffd500"><?php echo $text["title"]; ?></h3>
 </div>
 
 <div class="container text-center">
@@ -45,7 +45,7 @@ echo print_r($text, true);
                     <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                     <?php
-                    $sql2 = "select file, title from website where tag != 'Overview'";
+                    $sql2 = "select file, title from website where tag != 'overview'";
                     $stmt2 = $db->prepare($sql2);
                     $stmt2->execute();
                     $entries = $stmt2->fetchAll(PDO::FETCH_ASSOC);
