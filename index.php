@@ -33,8 +33,7 @@ require "db.php" ?>
             <h3>Lump</h3>
             <p class="text-left" style="text-indent: 40px">What if I just start typing here? Will anything happen? Who knows! Life is but a fever dream.</p>
             <p><?php
-                $sql = "select * from website where tag != ?";
-                $sql->bindValue(1, "overview");
+                $sql = "select * from website where tag != 'overview'";
                 $stmt = $db->prepare($sql);
                 $stmt->execute();
                 $text = $stmt->fetch(PDO::FETCH_ASSOC);
