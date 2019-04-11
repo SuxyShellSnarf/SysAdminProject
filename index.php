@@ -28,7 +28,7 @@ echo print_r($text, true);
 
 <div class="jumbotron text-center" style="background-image: url('http://cs.montclair.edu/images/csimage8.jpg');">
     <h1 style="color:#ffd500">Team Name Project</h1>
-    <p style="color:#ffd500"></p>
+    <p style="color:#ffd500"><?php echo $text["title"]; ?></p>
 </div>
 
 <div class="container text-center">
