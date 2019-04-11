@@ -37,7 +37,7 @@ echo print_r($text, true);
         </div>
         <div class="col-6">
             <h3>Lump</h3>
-            <p class="text-left" style="text-indent: 40px">What if I just start typing here? Will anything happen? Who knows! Life is but a fever dream. <?php echo $text["text"];?></p>
+            <p class="text-left" style="text-indent: 40px">What if I just start typing here? Will anything happen? Who knows! Life is but a fever dream. <?php echo $text["text"]; ?></p>
             <p></p>
 
             <div class="dropdown">
@@ -49,7 +49,7 @@ echo print_r($text, true);
                     $stmt2 = $db->prepare($sql2);
                     $stmt2->execute();
                     $entries = $stmt2->fetchAll(PDO::FETCH_ASSOC);
-                    foreach ($text as $t): ?>
+                    foreach ($entries as $t): ?>
                     <li><a href="<?php echo $t["file"]; ?>"><?php echo $t["title"]; ?></a></li>
                     <?php endforeach; ?>
                 </ul>
