@@ -24,7 +24,7 @@
         <div class="col-6">
             <h3>Lump</h3>
             <p class="text-left" style="text-indent: 40px">What if I just start typing here? Will anything happen? Who knows! Life is but a fever dream.</p>
-            <p><<?php
+            <p><?php
                 $sql = "select * from website";
                 $stmt = $db->prepare($sql);
                 $stmt->execute();
