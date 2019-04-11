@@ -29,7 +29,7 @@
                 $stmt = $db->prepare($sql);
                 $stmt->execute();
                 $text = $stmt->fetch(PDO::FETCH_ASSOC);
-                echo $text;
+                echo $text["text"];
                 ?></p>
         </div>
         <div class="col-3">
