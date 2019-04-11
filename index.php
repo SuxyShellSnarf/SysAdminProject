@@ -35,7 +35,7 @@ $text = $stmt->fetch(PDO::FETCH_ASSOC);
         <div class="col-3">
         </div>
         <div class="col-6">
-            <?php echo $text["text"]; ?><
+            <?php echo $text["text"]; ?>
 
             <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Directory
