@@ -11,6 +11,7 @@ $sql = "select * from website where tag = 'Overview'";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $text = $stmt->fetch(PDO::FETCH_ASSOC);
+echo print_r($text, true);
 ?>
 
 <!DOCTYPE html>
