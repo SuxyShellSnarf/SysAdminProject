@@ -33,7 +33,8 @@ require "db.php" ?>
             <h3>Lump</h3>
             <p class="text-left" style="text-indent: 40px">What if I just start typing here? Will anything happen? Who knows! Life is but a fever dream.</p>
             <p><?php
-                $sql = "select * from website";
+                $sql = "select * from website where tag != ?";
+                $sql->bindValue(1, "overview");
                 $stmt = $db->prepare($sql);
                 $stmt->execute();
                 $text = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -44,12 +45,12 @@ require "db.php" ?>
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Directory
                     <span class="caret"></span></button>
                 <ul class="dropdown-menu">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
+                    <?php foreach ($text as $t): ?>
+                    <li><a href="<?php echo $t["file"]; ?>"><?php echo $t["text"]; ?></a></li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
-            
+
         </div>
         <div class="col-3">
         </div>
