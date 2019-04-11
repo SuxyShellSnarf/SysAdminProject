@@ -37,7 +37,7 @@ require "db.php" ?>
                 $stmt = $db->prepare($sql);
                 $stmt->execute();
                 $text = $stmt->fetch(PDO::FETCH_ASSOC);
-                echo $text["text"];
+                echo print_r($text, true);
                 ?></p>
 
             <div class="dropdown">
