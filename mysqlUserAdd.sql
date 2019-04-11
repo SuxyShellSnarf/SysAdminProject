@@ -19,10 +19,9 @@ We have ADFS kinda working. We still have some errors to work through though.</p
 insert into website (title, tag, text, file) values ("Screenshots", "sc", "<p class='text-left' style='text-indent: 40px'>This is a list of all of our gathered screenshots.</p>", "screenshots.php");
 
 insert into website (title, tag, text, file) values ("Team Members and Roles", "team", "<h3>Team Members</h3>
-<ul>
-<li>Vince Chu
-<li>Dante Gennero
-<li>Mitchell Parker
+<p>Vince Chu</p>
+<p>Dante Gennero</p>
+<p>Mitchell Parker</p>
 </ul>&nbsp;
 <h3>Team Roles</h3>
 <p class='text-left' style='text-indent: 40px'>Vince took over as Domain Controller, since he had more knowledge and experience in this type of environment. He handled most of the heavy lifting and configuration for our project.</p>
