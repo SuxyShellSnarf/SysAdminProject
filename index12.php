@@ -30,7 +30,7 @@
                 $stmt->execute();
                 $text = $stmt->fetch(PDO::FETCH_ASSOC);
                 echo $text;*/
-                ?>-->*/</p>
+                ?>--></p>
         </div>
         <div class="col-3">
         </div>
