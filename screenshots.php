@@ -35,9 +35,7 @@ $text = $stmt->fetch(PDO::FETCH_ASSOC);
         <div class="col-3">
         </div>
         <div class="col-6">
-            <h3>Lump</h3>
-            <p class="text-left" style="text-indent: 40px">What if I just start typing here? Will anything happen? Who knows! Life is but a fever dream. <?php echo $text["text"]; ?></p>
-            <p></p>
+            <?php echo $text["text"]; ?>
 
             <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Directory

@@ -10,7 +10,16 @@ file varchar(255)
 );
 
 insert into website (title, tag, text, file) values ("Project Overview", "overview", "Some text", "index.php");
+
 insert into website (title, tag, text, file) values ("Screenshots", "sc", "Some screenshots", "screenshots.php");
-insert into website (title, tag, text, file) values ("Team Members and Roles", "team", "Some team bs", "team.php");
+
+insert into website (title, tag, text, file) values ("Team Members and Roles", "team", "<h3>Team Members</h3>
+<ul>
+<li>Vince Chu
+<li>Dante Gennero
+<li>Mitchell Parker
+</ul>", "team.php");
+
 insert into website (title, tag, text, file) values ("How to Access", "access", "Some more text", "access.php");
+
 insert into website (title, tag, text, file) values ("How to Setup", "setup", "And yet some more", "setup.php");
