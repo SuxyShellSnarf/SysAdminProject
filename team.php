@@ -40,7 +40,7 @@ $text = $stmt->fetch(PDO::FETCH_ASSOC);
             <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Directory
                     <span class="caret"></span></button>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" style="list-style: none">
                     <?php
                     $sql2 = "select file, title from website where tag != 'team'";
                     $stmt2 = $db->prepare($sql2);
