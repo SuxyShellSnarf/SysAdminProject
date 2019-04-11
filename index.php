@@ -7,7 +7,7 @@
  */
 
 require "db.php";
-$sql = "select * from website where tag != 'Overview'";
+$sql = "select * from website where tag = 'Overview'";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $text = $stmt->fetch(PDO::FETCH_ASSOC);
