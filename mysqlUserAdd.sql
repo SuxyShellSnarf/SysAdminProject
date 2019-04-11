@@ -16,7 +16,7 @@ We have a working build with LDAP in the sense that an active directory user can
 
 We have ADFS kinda working. We still have some errors to work through though.</p>", "index.php");
 
-insert into website (title, tag, text, file) values ("Screenshots", "sc", "<p class="text-left" style="text-indent: 40px">This is a list of all of our gathered screenshots.</p>", "screenshots.php");
+insert into website (title, tag, text, file) values ("Screenshots", "sc", "<p style="text-indent: 40px">This is a list of all of our gathered screenshots.</p>", "screenshots.php");
 
 insert into website (title, tag, text, file) values ("Team Members and Roles", "team", "<h3>Team Members</h3>
 <ul>

@@ -32,9 +32,9 @@ $text = $stmt->fetch(PDO::FETCH_ASSOC);
 
 <div class="container text-center">
     <div class="row text-center">
-        <div class="col-3">
+        <div class="col-2">
         </div>
-        <div class="col-6">
+        <div class="col-8">
             <?php echo $text["text"]; ?>
 
             <div class="dropdown">
@@ -60,7 +60,7 @@ $text = $stmt->fetch(PDO::FETCH_ASSOC);
             </div>
 
         </div>
-        <div class="col-3">
+        <div class="col-2">
         </div>
     </div>
 </div>
