@@ -6,7 +6,12 @@
  * Time: 11:35
  */
 
-require "db.php" ?>
+require "db.php";
+$sql = "select * from website where tag != 'Overview'";
+$stmt = $db->prepare($sql);
+$stmt->execute();
+$text = $stmt->fetch(PDO::FETCH_ASSOC);
+?>
 
 <!DOCTYPE html>
 <html lang="en" xmlns:http="http://www.w3.org/1999/xhtml">
@@ -22,7 +27,7 @@ require "db.php" ?>
 
 <div class="jumbotron text-center" style="background-image: url('http://cs.montclair.edu/images/csimage8.jpg');">
     <h1 style="color:#ffd500">Team Name Project</h1>
-    <p>RIP</p>
+    <p style="color:#ffd500"></p>
 </div>
 
 <div class="container text-center">
@@ -31,21 +36,20 @@ require "db.php" ?>
         </div>
         <div class="col-6">
             <h3>Lump</h3>
-            <p class="text-left" style="text-indent: 40px">What if I just start typing here? Will anything happen? Who knows! Life is but a fever dream.</p>
-            <p><?php
-                $sql = "select * from website where tag != 'overview'";
-                $stmt = $db->prepare($sql);
-                $stmt->execute();
-                $text = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                echo print_r($text, true);
-                ?></p>
+            <p class="text-left" style="text-indent: 40px">What if I just start typing here? Will anything happen? Who knows! Life is but a fever dream. <?php echo $text["text"];?></p>
+            <p></p>
 
             <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Directory
                     <span class="caret"></span></button>
                 <ul class="dropdown-menu">
-                    <?php foreach ($text as $t): ?>
-                    <li><a href="<?php echo $t["file"]; ?>"><?php echo $t["text"]; ?></a></li>
+                    <?php
+                    $sql2 = "select file, title from website where tag != 'Overview'";
+                    $stmt2 = $db->prepare($sql2);
+                    $stmt2->execute();
+                    $entries = $stmt2->fetchAll(PDO::FETCH_ASSOC);
+                    foreach ($text as $t): ?>
+                    <li><a href="<?php echo $t["file"]; ?>"><?php echo $t["title"]; ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </div>
