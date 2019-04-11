@@ -50,6 +50,13 @@ $text = $stmt->fetch(PDO::FETCH_ASSOC);
                         <li><a href="<?php echo $t["file"]; ?>"><?php echo $t["title"]; ?></a></li>
                     <?php endforeach; ?>
                 </ul>
+                <img src = "Screenshots/adfs-1.PNG">
+                <img src = "Screenshots/adfs-2.PNG">
+                <img src = "Screenshots/adfs-3.PNG">
+                <img src = "Screenshots/adfs-4.PNG">
+                <img src = "Screenshots/ldap-1.PNG">
+                <img src = "Screenshots/ldap-2.PNG">
+                <img src = "Screenshots/ldap-3.PNG">
             </div>
 
         </div>

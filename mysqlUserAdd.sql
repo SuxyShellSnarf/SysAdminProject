@@ -5,18 +5,18 @@ create table website (
 content_id int unsigned auto_increment primary key,
 title varchar(255),
 tag varchar(255),
-text varchar(255),
+text text,
 file varchar(255)
 );
 
 insert into website (title, tag, text, file) values ("Project Overview", "overview", "<h3>Overview</h3>
-<p>We are implementing Single Sign On.
+<p class="text-left" style="text-indent: 40px">We are implementing Single Sign On.
 
 We have a working build with LDAP in the sense that an active directory user can log into nextcloud using their AD information.
 
 We have ADFS kinda working. We still have some errors to work through though.</p>", "index.php");
 
-insert into website (title, tag, text, file) values ("Screenshots", "sc", "<p>This is a list of all of our gathered screenshots.</p>", "screenshots.php");
+insert into website (title, tag, text, file) values ("Screenshots", "sc", "<p class="text-left" style="text-indent: 40px">This is a list of all of our gathered screenshots.</p>", "screenshots.php");
 
 insert into website (title, tag, text, file) values ("Team Members and Roles", "team", "<h3>Team Members</h3>
 <ul>
