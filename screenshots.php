@@ -36,13 +36,7 @@ $text = $stmt->fetch(PDO::FETCH_ASSOC);
         </div>
         <div class="col-8">
             <?php echo $text["text"]; ?>
-            <img src = "Screenshots/adfs-1.PNG" class="img-thumbnail">
-            <img src = "Screenshots/adfs-2.PNG" class="img-thumbnail">
-            <img src = "Screenshots/adfs-3.PNG" class="img-thumbnail">
-            <img src = "Screenshots/adfs-4.PNG" class="img-thumbnail">
-            <img src = "Screenshots/ldap-1.PNG" class="img-thumbnail">
-            <img src = "Screenshots/ldap-2.PNG" class="img-thumbnail">
-            <img src = "Screenshots/ldap-3.PNG" class="img-thumbnail">
+
             <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Directory
                     <span class="caret"></span></button>
