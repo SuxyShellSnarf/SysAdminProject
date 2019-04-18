@@ -50,7 +50,6 @@ $text = $stmt->fetch(PDO::FETCH_ASSOC);
                     <?php endforeach; ?>
                 </ul>
             </div>
-
         </div>
         <div class="col-3">
         </div>
