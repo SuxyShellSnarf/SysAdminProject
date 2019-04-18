@@ -32,15 +32,11 @@ $text = $stmt->fetch(PDO::FETCH_ASSOC);
 
 <div class="container text-center">
     <div class="row text-center">
-        <div class="col-3">
+        <div class="col-2">
         </div>
-        <div class="col-6">
+        <div class="col-8">
             <?php echo $text["text"]; ?>
-            <h3>How to Setup</h3>
-            <ul style="list-style-type: lower-roman;">
-                <li>Step 1: Set up Nextcloud. This part will be brief since that was what our previous semester was for.</li>
-                <ul style="list-style-type: square; margin-left: -2em;"
-            </ul>
+
             <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Directory
                     <span class="caret"></span></button>
@@ -57,7 +53,7 @@ $text = $stmt->fetch(PDO::FETCH_ASSOC);
             </div>
 
         </div>
-        <div class="col-3">
+        <div class="col-2">
         </div>
     </div>
 </div>
