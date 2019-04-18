@@ -30,7 +30,7 @@ $text = $stmt->fetch(PDO::FETCH_ASSOC);
     <h3 style="color:#ffd500"><?php echo $text["title"]; ?></h3>
 </div>
 
-<div class="container text-center">
+<div class="text-center">
     <div class="row text-center">
         <div class="col-2">
         </div>
