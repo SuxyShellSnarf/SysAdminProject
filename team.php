@@ -29,7 +29,6 @@ $text = $stmt->fetch(PDO::FETCH_ASSOC);
     <h1 style="color:#ffd500">Team Name Project</h1>
     <h3 style="color:#ffd500"><?php echo $text["title"]; ?></h3>
 </div>
-
 <div class="container text-center" style="padding-bottom: 50px;">
     <div class="row text-center">
         <div class="col-3">
